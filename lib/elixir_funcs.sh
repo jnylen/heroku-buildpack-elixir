@@ -95,7 +95,7 @@ function backup_mix() {
 
 function install_hex() {
   output_section "Installing Hex"
-  mix local.hex --force
+  mix archive.install github hexpm/hex branch latest --force
 }
 
 function install_rebar() {
